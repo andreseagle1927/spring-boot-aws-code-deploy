@@ -16,10 +16,7 @@ hooks:
     - location: scripts/server_clear.sh
       timeout: 300
       runas: root
-  AfterInstall:
-    - location: scripts/fix_privileges.sh
-      timeout: 300
-      runas: root
+
   ApplicationStart:
     - location: scripts/server_start.sh
       timeout: 20
